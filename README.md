@@ -2,6 +2,8 @@
 
 This is a Streamlit app that visualizes the real-time location and velocity of the International Space Station (ISS) on a map, with an arrow that displays the direction and speed of its movement. The app uses data from an API and the `streamlit-leaflet` library to display the spacecraft location on a map.
 
+<img width="498" alt="Untitled" src="https://user-images.githubusercontent.com/83719998/218956621-20d1a432-6788-4f40-b9a0-11e134b7d0f0.png">
+
 ## Usage
 
 To use this app, you will need to install `Docker` on your machine. Once you have installed Docker, you can run the app using the following commands:
