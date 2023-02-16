@@ -3,10 +3,9 @@ import requests
 import pandas as pd
 import streamlit.components.v1 as components
 
-# Define the API URL
 API_URL = "http://api.open-notify.org/iss-now.json"
 
-# Define a function to get the spacecraft location from the API
+# Function to get the spacecraft location from the API
 def get_spacecraft_location():
     # Make the API request
     response = requests.get(API_URL)
@@ -19,9 +18,8 @@ def refresh():
     """Function to refresh the Streamlit script."""
     components.html("<script>location.reload();</script>")
 
-# Define the Streamlit app
+# Streamlit app
 def app():
-    # Set the app title
     st.title("Spacecraft Trajectory Visualization")
 
     # Get the spacecraft location from the API
@@ -34,7 +32,6 @@ def app():
     if st.button("Update"):
         refresh()
       
-        
-# Run the app
+
 if __name__ == '__main__':
     app()
